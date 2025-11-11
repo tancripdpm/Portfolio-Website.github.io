@@ -1,0 +1,63 @@
+/* Stili Generali */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
+}
+
+/* La Galleria dei Progetti (La parte "carina") */
+.project-gallery {
+    display: flex;         /* METTE LE SCHEDE UNA ACCANTO ALL'ALTRA */
+    flex-wrap: wrap;       /* Va a capo automaticamente sui piccoli schermi */
+    justify-content: center; /* Centra le schede */
+    padding: 20px;
+}
+
+/* La singola "Scheda" Progetto */
+.project-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 300px;         /* Larghezza fissa per ogni scheda */
+    margin: 15px;         /* Spazio tra le schede */
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.2s; /* Piccola animazione */
+}
+
+.project-card:hover {
+    transform: scale(1.03); /* Si ingrandisce un po' al passaggio del mouse */
+}
+
+/* Immagine del progetto */
+.project-card img {
+    width: 100%;
+    height: 180px; /* Altezza fissa per l'immagine */
+    object-fit: cover; /* Taglia l'immagine per riempire lo spazio */
+    border-radius: 5px;
+}
+
+/* Il link "Vedi il Codice" */
+.project-card .btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.project-card .btn:hover {
+    background-color: #0056b3;
+}
