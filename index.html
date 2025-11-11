@@ -2,33 +2,77 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>Il Portfolio di Tancredi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio di [IL TUO NOME]</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Il mio Portfolio</h1>
-        <p>Ciao! Sono Tancredi, benvenuto nel mio sito. Ecco alcuni progetti a cui ho lavorato.</p>
-    </header>
-
-    <main class="project-gallery">
-
-        <div class="project-card">
-            <img src="images/progetto1-img.jpg" alt="Screenshot del Progetto 1">
-            <h3>Nome del Progetto 1</h3>
-            <p>Una breve descrizione di cosa fa questo progetto, quali tecnologie hai usato, ecc.</p>
-            <a href="httpsE-LINK_AL_TUO_PROGETTO_SU_GITHUB" class="btn">Vedi il Codice</a>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="nav-logo">[IL TUO NOME]</a>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Chi Sono</a></li>
+                <li><a href="#projects">Progetti</a></li>
+                </ul>
         </div>
+    </nav>
 
-        <div class="project-card">
-            <img src="images/progetto2-img.jpg" alt="Screenshot del Progetto 2">
-            <h3>Nome del Progetto 2</h3>
-            <p>Una breve descrizione di cosa fa questo progetto, quali tecnologie hai usato, ecc.</p>
-            <a href="LINK_AL_PROGETTO_2" class="btn">Vedi il Codice</a>
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h1>Ciao, sono [IL TUO NOME]</h1>
+            <p>Uno sviluppatore [Specifica cosa fai, es: "Full Stack", "di App", "di Giochi"]</p>
+            <p>Benvenuto nel mio portfolio.</p>
         </div>
-        
-        </main>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container about-content">
+            <div class="about-image">
+                <img src="https://via.placeholder.com/300" alt="Una tua foto profilo">
+            </div>
+            <div class="about-text">
+                <h2>Chi Sono</h2>
+                <p>Scrivi qui una breve biografia. Parla dei tuoi studi, delle tue passioni, e di cosa stai cercando. Ad esempio: "Sono uno studente di Ingegneria Informatica con la passione per...".</p>
+                <p>Nel mio tempo libero mi piace esplorare nuove tecnologie e lavorare a progetti personali, alcuni dei quali puoi trovare qui sotto.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>I miei Progetti</h2>
+            <div class="project-gallery">
+
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Screenshot Progetto 1">
+                    <h3>Nome Progetto 1</h3>
+                    <p>Breve descrizione di cosa fa questo progetto e quali tecnologie hai usato (es. Python, C++, HTML/CSS).</p>
+                    <a href="[LINK AL REPOSITORY GITHUB DEL PROGETTO]" class="btn">Vedi il Codice</a>
+                    </div>
+
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Screenshot Progetto 2">
+                    <h3>Nome Progetto 2</h3>
+                    <p>Breve descrizione di cosa fa questo progetto e quali tecnologie hai usato.</p>
+                    <a href="[LINK AL REPOSITORY GITHUB DEL PROGETTO]" class="btn">Vedi il Codice</a>
+                </div>
+                
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Screenshot Progetto 3">
+                    <h3>Nome Progetto 3</h3>
+                    <p>Breve descrizione di cosa fa questo progetto e quali tecnologie hai usato.</p>
+                    <a href="[LINK AL REPOSITORY GITHUB DEL PROGETTO]" class="btn">Vedi il Codice</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 [IL TUO NOME]. Tutti i diritti riservati.</p>
+    </footer>
 
 </body>
 </html>
